@@ -52,7 +52,4 @@ public class FizzBuzzTest {
             System.out.println("FizzBuzz.translate(" + i + ") = " + FizzBuzz.translate(i));
         }
     }
-    
-
-
 }
