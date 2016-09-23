@@ -201,7 +201,6 @@ public class CalcStatsTest {
 		CalcStats calcStats = new CalcStats(new int[] {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE});
 		assertThat(calcStats.getAverage().get()).isEqualTo(Integer.MAX_VALUE);
 	}
-
 }
 
 

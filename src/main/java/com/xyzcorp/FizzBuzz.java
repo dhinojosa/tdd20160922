@@ -1,13 +1,13 @@
 package com.xyzcorp;
 
 
-abstract class FizzBuzz {
+public class FizzBuzz {
     public static String translate(int number) {
-        boolean divisibleBy3 = number % 3 == 0;
-        boolean divisibleBy5 = number % 5 == 0;
-        if (divisibleBy3 && divisibleBy5) return "FizzBuzz";
-        if (divisibleBy3) return "Fizz";
-        if (divisibleBy5) return "Buzz";
-        return Integer.toString(number);
+        StringBuilder builder = new StringBuilder();
+        if (number % 3 == 0) builder.append("Fizz");
+        if (number % 5 == 0) builder.append("Buzz");
+        else if (builder.length() == 0)
+            builder.append(Integer.toString(number));
+        return builder.toString();
     }
 }
