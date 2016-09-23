@@ -1,7 +1,7 @@
 package com.xyzcorp;
 
 
-public class FizzBuzz {
+abstract class FizzBuzz {
     public static String translate(int number) {
         boolean divisibleBy3 = number % 3 == 0;
         boolean divisibleBy5 = number % 5 == 0;
